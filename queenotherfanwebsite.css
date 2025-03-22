@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    border-bottom: 3px solid #900;
+    padding-bottom: 10px;
+}
+
+.fan-sites {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fan-sites li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fan-sites a {
+    color: #900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fan-sites a:hover {
+    text-decoration: underline;
+}
+
+.site-description {
+    color: #666;
+    margin-top: 5px;
+}

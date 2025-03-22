@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #900;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.events-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.events-timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.events-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #ddd;
+}
+
+.event {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.event.past::before {
+    background-color: #900;
+}
+
+.event.upcoming::before {
+    background-color: #0066cc;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.event-details h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.event.past .event-details h2 {
+    color: #900;
+}
+
+.event.upcoming .event-details h2 {
+    color: #0066cc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .events-timeline {
+        padding-left: 30px;
+    }
+    
+    .event::before {
+        left: -40px;
+    }
+}
